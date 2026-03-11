@@ -14,7 +14,7 @@ categories = [ "api-bindings", "memory-management", "os" ]
 
 [dependencies]
 #memflow = { version = "0.2", default-features = false }
-memflow = { path = "../../memflow/memflow" }
+memflow = { git = "https://github.com/forensicxlab/memflow", branch = "main", default-features = false }
 
 log = { version = "0.4", default-features = false }
 no-std-compat = { version = "0.4", features = ["alloc"] }

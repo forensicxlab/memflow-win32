@@ -22,7 +22,7 @@ crate-type = ["lib", "cdylib"]
 
 [dependencies]
 #memflow = { version = "0.2", default-features = false }
-memflow = { path = "../../memflow/memflow" }
+memflow = { git = "https://github.com/forensicxlab/memflow", branch = "main", default-features = false }
 log = { version = "0.4", default-features = false }
 pelite = { version = "0.10", default-features = false }
 widestring = { version = "1.1", default-features = false, features = ["alloc"] }
@@ -45,7 +45,7 @@ toml = "0.8"
 toml = "0.8"
 serde = { version = "1.0", default-features = false, features = ["derive", "alloc"] }
 #memflow = { version = "0.2", default-features = false }
-memflow = { path = "../../memflow/memflow" }
+memflow = { git = "https://github.com/forensicxlab/memflow", branch = "main", default-features = false }
 memflow-win32-defs = { version = "0.2", path = "../memflow-win32-defs", features = ["symstore"] }
 
 [features]
